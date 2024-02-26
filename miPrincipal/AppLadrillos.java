@@ -9,9 +9,10 @@ public class AppLadrillos {
         //Solucion recursiva
         dibujarPared();
     }
-    public static void dibujarPared(){
-        dibujarPared();
-        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+    public static void dibujarPared(int n){
+        if(n>0)
+            dibujarPared();
+        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXX"+n);
     }
     public static void dibujarHilera(){
         System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXX");
